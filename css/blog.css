@@ -20,7 +20,7 @@ main #blog-image img {
   border-bottom: none;
 }
 
-main #blog-image-caption {
+main figcaption {
   width: 100%;
   max-width: 1000px;
   text-align: center;
@@ -53,6 +53,10 @@ main article {
   background-color: #fff;
   font-weight: 200;
   border: 1px solid #000;
+}
+
+main article blockquote {
+  margin-left: 0px;
 }
 
 main #blog-content-side {
