@@ -1,0 +1,126 @@
+.container {
+  display: grid;
+
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "footer";
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-gap: 0px;
+
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+
+}
+
+main #content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+main #content-container .box {
+  flex: 1 0 calc(30% - 10px);
+  margin: 10px;
+  background: #fff;
+  overflow: hidden;
+  height: 250px;
+}
+
+
+main #content-container .box:after{
+  content: '';
+  display: block;
+  padding-top: 89%;
+}
+
+
+main #content-container .box h3 {
+  background-color: #e4e4e4;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  opacity: 0.75;
+}
+
+main #content-container .box .box-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+main #content-container .box.blog-1 .box-image {
+    background-image: url(../img/dandelion.jpg);
+}
+
+main #content-container .box.blog-2 .box-image {
+    background-image: url(../img/coffee_beans.jpg);
+}
+
+main #content-container .box.blog-3 .box-image {
+    background-image: url(../img/covid19.jpg);
+}
+
+main #content-container .box.blog-4 .box-image {
+    background-image: url(../img/winter_minimalism.jpg);
+    background-size: 150%;
+    background-position: 100%;
+}
+
+main #content-container .box.blog-5 .box-image {
+    background-image: url(../img/code.jpg);
+    background-size: 150%;
+}
+
+main #content-container .box.blog-6 .box-image {
+    background-image: url(../img/leaves.jpg);
+    background-size: 150%;
+}
+
+main #content-container .box .blog-btn {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: #9cbbbf;
+    color: #000;
+    opacity: 0.95;
+    padding: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+main #content-container .box .blog-btn a:link, main #content-container .box .blog-btn a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+main #content-container .box .blog-btn a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  main #content-container .box {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  main #content-container {
+    flex-direction: row;
+  }
+  main #content-container .box {
+    height: auto;
+  }
+
+}

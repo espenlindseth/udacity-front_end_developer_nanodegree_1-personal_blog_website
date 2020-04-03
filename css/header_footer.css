@@ -1,0 +1,41 @@
+/* HEADER */
+
+header {
+  grid-area: header;
+  margin-top: 25px;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+header h1 {
+  font-size: 2.0em;
+  margin: 10px 10px 3px 10px;
+  font-weight: 200;
+}
+
+header h2 {
+  font-size: 1.1em;
+  margin: 0px 10px 25px 10px;
+  font-weight: 200;
+}
+
+/* FOOTER */
+
+footer {
+  grid-area: footer;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+#footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0px;
+  color: #5a5b5b;
+  font-weight: 100;
+  font-size: 0.9em;
+}
